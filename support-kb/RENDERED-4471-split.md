@@ -32,4 +32,4 @@ owner **support desk** · status **known** · reviewed 2026-10-28
 - Intake tags are a guess: 15 of the 33 form-hint reports were tagged `parser`.
 - Merging on subject hides different causes. Check tenant and channel before you merge.
 
-desk ref **DR-ANTC-N77G**
+desk ref **DR-4J1K-3D18**

@@ -4,14 +4,13 @@ title: '#4471 · three problems merged as one'
 owner: support desk
 status: known
 reviewed: 2026-10-28
-signature: edpittol
+signature: v1.eyJzdWIiOiIyNTMwIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyNDE1NDMsImV4cCI6MTc5MzMyNzk0M30.RQlQlcIJTC1j7lAH1iGNUX8i_O4jaFnEj1gpmWvtr-M
 ---
 
 <script>
   import CauseTable from '#lib/kb/CauseTable.svelte';
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
-  export let signature = 'edpittol';
 </script>
 
 #4471 was marked known as one parser bug. Its 412 unique reports (427 export rows, 15 repeated) hold three separate problems. Each now has its own ticket in the course repo.
