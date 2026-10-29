@@ -1,0 +1,42 @@
+---
+layout: runbook
+title: '#4471 · three problems merged as one'
+owner: support desk
+status: known
+reviewed: 2026-10-28
+signature: edpittol
+---
+
+<script>
+  import CauseTable from '#lib/kb/CauseTable.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+  export let signature = 'edpittol';
+</script>
+
+#4471 was marked known as one parser bug. Its 412 unique reports (427 export rows, 15 repeated) hold three separate problems. Each now has its own ticket in the course repo.
+
+<Callout kind="warn">
+Not one issue. A parser fix will not close the form-hint reports or the one-day-shift reports.
+</Callout>
+
+## What was merged
+
+<CauseTable ticket={4471} />
+
+## Tickets
+
+| problem | reports | ticket |
+| --- | --- | --- |
+| Parser reads day-first dates month first | 374 | [#1](https://github.com/edpittol/mega-s01e03-4471/issues/1) |
+| booking-v3 form hint says MM/DD/YYYY to day-first tenants | 33 | [#2](https://github.com/edpittol/mega-s01e03-4471/issues/2) |
+| Invites one day off (time-zone or date-boundary suspect) | 5 | [#3](https://github.com/edpittol/mega-s01e03-4471/issues/3) |
+
+374 + 33 + 5 = 412. The table above counts the 5 under `parser`, where the desk files them by tenant; they are footnoted there.
+
+## Lessons
+
+- Intake tags are a guess: 15 of the 33 form-hint reports were tagged `parser`.
+- Merging on subject hides different causes ([decision 0001](/kb/decisions/0001-dedupe-by-subject)). Check tenant and channel before you merge.
+
+<RenderStamp {signature} />
